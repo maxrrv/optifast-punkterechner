@@ -8,13 +8,10 @@
   <div>
     <form action="" id="optifast-calculator">
       <p>
-        <label for=""></label>
-        <select id="point-type" name="point-type">
-          <option value="green-point">Green</option>
-          <option value="yellow-point">Yellow</option>
-          <option value="red-point">Red</option>
-        </select>
+        <label for="mixed">Mixed yellow and red?</label>
+        <input id="mixed" type="checkbox" name="mixed">
       </p>
+      
       <p>
         <label for="fat">Fett</label>
         <input id="fat" name="fat" type="text">
@@ -36,5 +33,10 @@
 
 
   <script src="index.js"></script>
+  <script>
+    const { addListeners, handleFormData } = opti()
+
+    addListeners(handleFormData)
+  </script>
 </body>
 </html>
