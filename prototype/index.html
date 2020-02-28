@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Optifast punkterechner</title>
-</head>
-<body>
-  <div>
-    <form action="" id="optifast-calculator">
-      <p>
-        <label for="mixed">Mixed yellow and red?</label>
-        <input id="mixed" type="checkbox" name="mixed">
-      </p>
-      
-      <p>
-        <label for="fat">Fett</label>
+  <head>
+    <meta charset="UTF-8">
+    <title>Optifast punkterechner</title>
+  </head>
+  <body>
+    <div>
+      <form action="" id="optifast-calculator">
+        <p>
+        <label for="fat">Fat</label>
         <input id="fat" name="fat" type="text">
-      </p>
-      <p>
-        <label for="protein">Eiweiss</label>
+        </p>
+        <p>
+        <label for="protein">Protein</label>
         <input id="protein" name="protein" type="text">
-      </p>
-      <p>
-        <label for="carbohydrates">Kohlenhydrate</label>
+        </p>
+        <p>
+        <label for="carbohydrates">Carbohydrates</label>
         <input id="carbohydrates" name="carbohydrates" type="text">
-      </p>
-      <p><input type="submit"></p>
-      
-    </form>
-  </div>
-  <div id="result">
-  </div>
-
-
-  <script src="index.js"></script>
-  <script>
-    const { addListeners, handleFormData } = opti()
-
-    addListeners(handleFormData)
-  </script>
-</body>
+        </p>
+        <p>
+        <label for="mixed">Mixed?</label>
+        <input id="mixed" type="checkbox" name="mixed">
+        </p>
+        <p><input type="submit"></p>
+      </form>
+    </div>
+    <div id="result">
+    </div>
+    <script src="index.js"></script>
+    <script>
+      const { addListeners, handleFormData } = opti()
+      addListeners(handleFormData)
+    </script>
+  </body>
 </html>
