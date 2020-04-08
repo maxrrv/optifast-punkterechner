@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <Calculator />
+    <Calculator msg="Hello World" />
   </div>
 </template>
 
 <script>
-import Calculator from "./components/Calculator.vue";
+import Calculator from './components/Calculator.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    Calculator
-  }
-};
+    Calculator,
+  },
+}
 </script>
 
 <style lang="scss">
