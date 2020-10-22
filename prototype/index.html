@@ -11,24 +11,33 @@
         <form action="" id="optifast-calculator">
           <p>
             <label for="fat">Fat</label>
-            <input id="fat" name="fat" type="text">
+            <input class="formfield" id="fat" name="fat" type="text" autofocus pattern="[+-]?([0-9]*[.])?[0-9]+">
           </p>
           <p>
             <label for="protein">Protein</label>
-            <input id="protein" name="protein" type="text">
+            <input class="formfield" id="protein" name="protein" type="text" pattern="[+-]?([0-9]*[.])?[0-9]+">
           </p>
           <p>
             <label for="carbohydrates">Carbohydrates</label>
-            <input id="carbohydrates" name="carbohydrates" type="text">
+            <input class="formfield" id="carbohydrates" name="carbohydrates" type="text" pattern="[+-]?([0-9]*[.])?[0-9]+">
           </p>
           <p>
             <label for="mixed">Mixed?</label>
-            <input id="mixed" type="checkbox" name="mixed">
+            <input class="checkbox" id="mixed" type="checkbox" name="mixed">
           </p>
-          <p><input type="submit"></p>
+          <p><input class="button" type="submit"></p>
         </form>
       </div>
       <div id="result">
+        <div class="resultBox green">
+          <span id="green-result"></span>
+        </div>
+        <div class="resultBox yellow">
+          <span id="yellow-result"></span>
+        </div>
+        <div class="resultBox red">
+          <span id="red-result"></span>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
