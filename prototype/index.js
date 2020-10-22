@@ -5,9 +5,9 @@ const opti = () => {
   const getFormData = () => {
     const formData = new FormData(document.getElementById("optifast-calculator"))
     return {
-      carbohydrates: formData.get("carbohydrates"),
-      fat: formData.get("fat"),
-      protein: formData.get("protein"),
+      carbohydrates: parseInt(formData.get("carbohydrates")),
+      fat: parseInt(formData.get("fat")),
+      protein: parseInt(formData.get("protein")),
       mixed: formData.get("mixed")
     }
   }
